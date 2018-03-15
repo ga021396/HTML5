@@ -1,2 +1,2 @@
 # HTML5
-The project in class
+The projects in the class
