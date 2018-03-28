@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>測試網頁</title>
+<!--*********-->
+<!-- 加入css -->
+<!--*********-->
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<link href="css/myDropdownMenu.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <div class="header">
+        <img src="images/logo.jpg" class="logo">
+       
+        <div class="navbar">
+            <ul class="right">
+                <li><a href="/productOneItemQuery">回前頁</a></li>
+            </ul>          
+        </div>        
+    </div>
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->  
+    
+    
+    
+    <!--==========================================-->
+    <div class="container">
+        
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <div class="content">
+            <h2 class="title">產品單項資料</h2>   
+            
+            <p>
+                <!--********************************************-->
+                <table width="100%" border="0" class="dataList">
+                    <!--~~~~~~~~~~~~~~~~~~~~~~-->                 
+                    <tr>
+                        <td width="200">項目</td>
+                        <td>內容</td>                        
+                    </tr>
+                    <!--~~~~~~~~~~~~~~~~~~~~~~-->                  
+                    <tr>
+                        <td>編號</td>
+                        <td><%= data[0].proNo %></td>                        
+                    </tr>
+                    <tr>
+                        <td>名稱</td>
+                        <td><%= data[0].proName %></td>                        
+                    </tr>
+                    <tr>
+                        <td>供應商編號</td>
+                        <td><%= data[0].supNo %></td>                        
+                    </tr>
+                    <tr>
+                        <td>型態編號</td>
+                        <td><%= data[0].typNo %></td>                        
+                    </tr>
+                    <tr>
+                        <td>單價</td>
+                        <td><%= data[0].price %></td>                        
+                    </tr> 
+                    <tr>
+                        <td>庫存量</td>
+                        <td><%= data[0].stockAmt %></td>                        
+                    </tr> 
+                    <tr>
+                        <td>訂單數量</td>
+                        <td><%= data[0].orderAmt %></td>                        
+                    </tr> 
+                    <tr>
+                        <td>安全存量</td>
+                        <td><%= data[0].safeAmt %></td>                        
+                    </tr> 
+                    <tr>
+                        <td>盤點日期</td>
+                        <td><%= moment(data[0].inventoryDate).format("YYYY-MM-DD") %></td>                        
+                    </tr> 
+                    <tr>
+                        <td>圖片</td>
+                        <td><img src="images/<%= data[0].picture %>"</td>                        
+                    </tr>                                                                                                     
+                    <!--~~~~~~~~~~~~~~~~~~~~~~-->                      
+                </table> 
+                <!--********************************************-->
+            </p>	    
+        </div>    
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->      
+        
+        
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <div class="footer">
+            NTUB imd, 2017.    
+        </div>        
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--> 
+	
+    </div>
+    <!--==========================================-->  
+    <!--*********-->
+    <!-- 載入js  -->
+    <!--*********-->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>    
+    <script src="js/scripts.js"></script>   
+    <script src="js/myDropdownMenu.js"></script>        
+</body>
+</html>

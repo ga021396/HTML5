@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* CSS Document */
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+html,body{
+	line-height:28px;
+	font-family: 'Noto Sans TC', sans-serif;
+	font-size:18px;
+	background-color:#FFF;
+	background-image:url(../img/pic11.jpg);
+	background-repeat:repeat-x;
+	margin:0;
+	}
+/*--container--*/
+div.container{
+	width:800px;
+	margin-left:auto;
+	margin-right:auto;
+	border:1px solid #000;
+	}
+
+/*--header--*/
+div.header{
+	margin:0;
+	height:150px;
+	line-height:150px;
+	background-color:#0CF;
+	}
+
+/*--context--*/
+div.content h1{
+	line-height:30px;
+	}
+	
+div.content h2{
+	border-left:24px solid #000;
+	padding:5px;
+	box-shadow:0px 0px 10px 1px #666666;
+	}
+	
+	
+div.content p.text{
+	font-size:14px;
+	color:#999;
+	line-height:10px;
+	font-weight:400;
+	}
+
+div.content{
+	text-align:justify;
+	padding:20px 25px;
+	background-color:#FFF;
+	}
+div.content img{
+	margin-left:auto;
+	margin-right:0px;
+	padding:auto;
+	
+	}
+	
+div.content img.author{
+margin-right:10px;
+border:none;
+border-radius:40px;
+float:left;
+}
+
+
+div.footer{
+	height:80px;
+	text-align:justify;
+	line-height:80px;
+	background-image:url(../img/pic11.jpg);
+	color:#FFF;
+	letter-spacing:1px;
+	padding-left:20px;
+	padding-right:20px;
+	}

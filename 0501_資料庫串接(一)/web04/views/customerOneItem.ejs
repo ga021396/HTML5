@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>測試網頁</title>
+<!--*********-->
+<!-- 加入css -->
+<!--*********-->
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css" />
+<link href="css/my.jquery.fancybox.css" rel="stylesheet" type="text/css" />
+<link href="css/myDropdownMenu.css" rel="stylesheet" type="text/css" />
+
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <div class="header">
+        <img src="images/logo.jpg" class="logo">
+       
+        <div class="navbar">
+            <ul class="right">
+                <li><a href="/customerOneItemQuery">回前頁</a></li>
+            </ul>          
+        </div>        
+    </div>
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->  
+    
+    
+    
+    <!--==========================================-->
+    <div class="container">
+        
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <div class="content">
+            <h2 class="title">cus單項資料</h2>   
+            
+            <p>
+                <!--********************************************-->
+                <table width="100%" border="0" class="dataList">
+                    <!--~~~~~~~~~~~~~~~~~~~~~~-->                 
+                    <tr>
+                        <td width="200">項目</td>
+                        <td>內容</td>                        
+                    </tr>
+                    <!--~~~~~~~~~~~~~~~~~~~~~~-->                  
+                    <tr>
+                        <td>編號</td>
+                        <td><%= data[0].cusNo %></td>                        
+                    </tr>
+                    <tr>
+                        <td>名稱</td>
+                        <td><%= data[0].cusName %></td>                        
+                    </tr>
+                    <tr>
+                        <td>name</td>
+                        <td><%= data[0].contactor %></td>                        
+                    </tr>
+                    <tr>
+                        <td>title</td>
+                        <td><%= data[0].title %></td>                        
+                    </tr>
+                                        
+                    <!--~~~~~~~~~~~~~~~~~~~~~~-->                      
+                </table> 
+                <!--********************************************-->
+				
+				<!--~~~~~~~~~~~~~~~~-->
+                <!-- Fancybox 測試  -->
+                <!--~~~~~~~~~~~~~~~~-->
+                <p class="imageView">
+                    <a data-fancybox="gallery" href="images/<%= data[0].picture01 %>">
+                        <img src="images/<%= data[0].picture01 %>" width="100">
+                    </a>      
+					<a data-fancybox="gallery" href="images/<%= data[0].picture02 %>">
+                        <img src="images/<%= data[0].picture02 %>" width="100">
+                    </a>    					
+                </p>
+                <!--~~~~~~~~~~~~~~~~--> 
+            </p>	    
+        </div>    
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->      
+        
+        
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <div class="footer">
+            NTUB imd, 2017.    
+        </div>        
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--> 
+	
+    </div>
+    <!--==========================================-->  
+    <!--*********-->
+    <!-- 載入js  -->
+    <!--*********-->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 
+    <script src="js/jquery.fancybox.js"></script> 
+    <script src="js/myDropdownMenu.js"></script> 	
+	
+    <script src="js/scripts.js"></script>          
+</body>
+</html>

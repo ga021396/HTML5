@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+/*---------------------------*/
+/* 引用思源中文                */
+/*---------------------------*/
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+
+/*---------------------------*/
+/* 定義網頁                   */
+/*---------------------------*/
+html, body{
+    font-size:17px;
+    /*設定思源中文*/
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 280;   
+    background:#444;    
+}
+
+
+/*---------------------------*/
+/* 定義容器                   */
+/*---------------------------*/
+div.container{
+    width:800px;
+    border:1px solid #666;  
+    margin:10px auto 10px auto;
+    box-sizing:border-box;
+    background:#fff;
+    box-shadow:0px 0px 10px 0px #000;
+}
+
+
+/*---------------------------*/
+/* 定義標題                   */
+/*---------------------------*/
+div.header{
+    height:150px;
+    background:#CCC;
+    font-size:40px;
+    text-align:center;
+    line-height:150px;
+    letter-spacing:7px;
+}
+
+/*---------------------------*/
+/* 定義navbar                */
+/*---------------------------*/
+div.navbar{
+  height:50px;
+  background:#F00;
+}
+
+div.navbar ul{
+	margin:0px;
+	list-style-type:none;
+	padding:0px;
+
+}
+
+div.navbar ul li{
+	height:50px;
+	line-height:50PX;
+	float:left;
+	width:100px;
+	text-align:center;
+	color:#FFF;
+	}
+
+/*---------------------------*/
+/* 定義內容                   */
+/*---------------------------*/
+div.content{       
+    padding:0px 25px 20px 25px;
+}
+
+
+/*---------------------------*/
+/* 定義表尾                   */
+/*---------------------------*/
+div.footer{
+    height:100px;
+    line-height:100px;
+    background:#CCC;
+    font-size:13px;
+    text-align:center;
+    letter-spacing:3px;
+}

@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+div.header{
+	width:700px;
+	height:100px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:justify;
+	line-height:100px;
+	font-size:40px;
+	font-style:inherit;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	background:#842d74;
+	color:#FFF;
+	overflow:hiddle;
+	}
+
+div.content{
+	background:#bd7ab0;
+	box-sizing:border-box;
+	width:700px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:justify;
+	padding:20px;
+	}

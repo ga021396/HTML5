@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+/*---------------------------*/
+/* 引用思源中文                */
+/*---------------------------*/
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+@import url(//fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/*---------------------------*/
+/* 定義網頁                   */
+/*---------------------------*/
+html, body{
+    font-size:17px;
+    /*設定思源中文*/
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 280;   
+	margin:0; 
+}
+html{ min-height:800px;
+	  min-width:1600px;
+	  height: 100%;}
+body{	min-height:800px;
+		min-width:1600px;
+	   background-image:url(../IMG/background.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+	
+	}
+
+/*---------------------------*/
+/* 定義容器                   */
+/*---------------------------*/
+div.container{
+	top:70PX;
+	position:relative;
+	width:800px;
+    border-top:1px solid #666;  
+    margin:0px auto 10px auto;
+}
+
+
+/*---------------------------*/
+/* 定義標題                   */
+/*---------------------------*/
+div.header{
+	min-width:1500px;
+	width:100%;
+	position:fixed;
+    height:70px;
+    background:rgba(225,225,225,0.75);
+	z-index:20;
+}
+
+/*---------------------------*/
+/* 定義navbar                */
+/*---------------------------*/
+div.navbar{
+  min-width:1500px;
+  margin-left:50px;
+  top:24px;
+  height:50px;
+  position:fixed;
+  z-index:30;
+}
+
+div.navbar ul{
+	margin:0px;
+	list-style-type:none;
+	padding:0px;
+
+}
+
+div.navbar ul li{
+	height:50px;
+	line-height:50PX;
+	float:left;
+	width:80px;
+	text-align:center;
+    color:#000;
+	font-weight:600; 
+	font-size:14px;
+	font-family: 'cwTeXFangSong', serif;
+	}
+	
+div.navbar ul li.title{
+	text-shadow: 2px 2px 3px #434a54;
+	margin-right:20px;
+	height:50px;
+	line-height:50PX;
+	float:left;
+	width:140px;
+	text-align:center;
+    color:#000;
+	font-weight:700; 
+	font-size:28px;
+	font-family: 'cwTeXFangSong', serif;
+	}
+
+/*---------------------------*/
+/* 定義內容                   */
+/*---------------------------*/
+div.content{    
+	text-shadow: 2px 2px 3px #434a54;   
+    padding:0px 0px 0px 0px;
+	text-align:left;
+	font-weight:600; 
+	font-size:24px;
+	color:#FFF;
+	font-family: 'cwTeXFangSong', serif;
+	
+	
+}
+div.content h1{
+	line-height:100px;
+	}
+div.bottom{
+	height:150px
+	}
+/*---------------------------*/
+/* 定義表尾                   */
+/*---------------------------*/
+div.footer{
+	letter-spacing:3px;
+	color:#FFF;
+	font-size:10px;
+	line-height:10px;
+	text-align:right;
+    bottom:0px;
+    height:15px;
+	width:100%;
+	position:fixed;
+    background:rgba(169,169,169,0.75);
+	z-index:20;
+}
+
+div.navbar ul li:hover{
+	color:#333;
+	}

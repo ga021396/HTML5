@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+  <!---------------------------------->
+  <ion-list>
+  <ion-item *ngFor='let item of item'>
+    <ion-thumbnail item-left>
+      <img src={{item.imgURL}}>
+    </ion-thumbnail>
+    <h2>{{item.name}}</h2>
+    <p>{{item.comment}}</p>
+    <button ion-button clear item-right (click)="goNext(item.name,item.thumbnail,item.author,item.comment,item.authorImgURL)">View</button>
+  </ion-item>
+</ion-list>
+  <!---------------------------------->
+  <p>
+    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
+  </p>
+</ion-content>

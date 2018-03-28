@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+/*---------------------------*/
+/* 引用思源中文                */
+/*---------------------------*/
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+/*---------------------------*/
+/* 定義網頁                   */
+/*---------------------------*/
+html, body{
+    font-size:17px;
+    /*設定思源中文*/
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 280;	
+    background-color:#444;
+    margin:0;	
+}
+
+
+/*---------------------------*/
+/* 定義標題                   */
+/*---------------------------*/
+div.header{
+    width:100%;	
+    min-width:800px;
+    height:80px;
+    background-color:#CCC;
+    text-align:center;
+    position:fixed;
+    z-index:20;
+    box-shadow:0px 1px 3px 1px #000;
+}
+
+
+/*---------------------------*/
+/* 定義logo圖示               */
+/*---------------------------*/
+div.header img.logo{
+    width:80px;
+    height:80px;
+    border-radius:40px;
+    position:relative;
+    z-index:30;    
+    top:20px;
+    box-shadow:0px 1px 3px 1px #000;
+}
+
+div.header img.logo:hover{
+    cursor:pointer;	
+}
+
+
+/*---------------------------*/
+/* 定義導覽列                */
+/*---------------------------*/
+div.navbar{	   
+    width:800px;
+    height:40px;
+    line-height:40px;
+    box-sizing:border-box;   
+    position:relative;
+    top:-50px; 
+	margin-left:auto;
+	margin-right:auto;	
+}
+
+div.navbar button{
+	width:80px;
+	height:40px;
+	border:none;
+	background:none;
+	font-size:18px;
+}
+
+div.navbar button:focus{
+	outline:0;
+}
+
+div.navbar button:hover{
+	cursor:pointer;
+	color:#fff;
+}
+
+div.navbar div.left{
+    float:left;	
+    margin-left:30px;
+}
+
+div.navbar div.right{
+    float:right;
+    margin-right:30px;
+}
+
+
+/*--~~~~~~~~~~~~~~~~~~~~~~~--*/
+/* 定義容器                   */
+/*--~~~~~~~~~~~~~~~~~~~~~~~--*/
+div.container{
+    width:800px;	
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;	
+    top:80px;
+}
+
+
+/*---------------------------*/
+/* 定義內容                   */
+/*---------------------------*/
+div.content{	   
+    padding:0px 25px 20px 25px;
+    box-sizing:border-box;
+    background:#fff;
+    text-align:justify;
+}
+
+div.content h2{
+    margin-top:0;
+    padding-top:25px;
+}
+
+div.content h2:first-child{
+    padding-top:55px;
+}
+
+
+/*---------------------------*/
+/* 定義表尾                   */
+/*---------------------------*/
+div.footer{
+    height:100px;
+    line-height:100px;
+    background:#CCC;
+    font-size:13px;
+    text-align:center;
+    letter-spacing:3px;
+}

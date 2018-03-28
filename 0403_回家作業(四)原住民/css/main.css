@@ -1,0 +1,73 @@
+@charset "utf-8";
+/* CSS Document */
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah'); 
+html,body{
+	margin:0;
+	font-family: 'Noto Sans TC', sans-serif;
+	}
+div.header{
+	width:100%;
+	height:80px;
+	background:rgba(255,255,255,0.75);
+	box-shadow:0px 1px 3px 1px #CCCCCC;
+	border-top:3px solid #F00;
+	position:fixed;
+	z-index:20;
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size:36px;
+	color:#F00;
+	padding-left:80PX;
+	line-height:80px;
+	font-weight:650;
+	}
+div.container {
+	position:relative;
+	float:left;
+	top:150px;
+	margin-right:auto;
+	margin-left:auto;
+	left:300px;
+	width:700px;
+	}
+div.footer {
+	position:relative;
+	float:left;
+	top:290px;
+	margin-right:auto;
+	margin-left:auto;
+	left:340px;
+	width:600px;
+	text-align:left;
+	font-size:24px;
+	}
+div.container h1{
+	left:500px;
+	text-align:center;
+	font-size:36px;
+	}
+
+div.navbar{
+	width:100%;
+    height:40px;
+    line-height:40px;
+    box-sizing:border-box;
+    margin-left:auto;
+    margin-right:auto;
+    position:relative;    
+	z-index:30;
+	top:-90px;
+	left:240px;
+	min-width:800px;
+	}
+
+div.navbar ul li{
+	font-family: 'Noto Sans TC', sans-serif;
+	font-size:16px;
+	float:left;
+	margin-right:80px;
+	list-style-type:none;
+	color:#000;
+	font-weight:600;
+	
+	}
